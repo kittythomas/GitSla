@@ -1,0 +1,25 @@
+{
+  "name": "GitSla",
+  "version": "1.0.0",
+  "description": "An app that lets github notify on a user's personal notifications through slack",
+  "main": "./src/index.js",
+  "repository": "https://github.com/rickynyairo/GitSla.git",
+  "author": "Ricky Nyairo <rickynyairo@gmail.com>, Njeri Ngigi <njery.ngigi@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Shit to set up before production!\" && exit 1",
+    "start:dev": "DEBUG=log nodemon ./node_modules/.bin/babel-node src/index.js",
+    "test": "echo \"We're not there yet!\" && exit 1"
+  },
+  "dependencies": {
+    "@slack/client": "^4.10.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
