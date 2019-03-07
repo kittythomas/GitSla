@@ -10,4 +10,4 @@ const port = process.env.PORT;
 
 server.listen(port, ()=>{
   console.log(`server start at port ${port}`);
- })
+});
