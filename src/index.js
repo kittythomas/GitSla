@@ -1,13 +1,12 @@
-import dotenv from 'dotenv';
 import http from 'http';
 import app from './app';
-
-dotenv.config();
+import ENV from './config';
 
 const server = http.createServer(app);
 
-const port = process.env.PORT;
+const port = ENV.PORT;
 
-server.listen(port, ()=>{
+server.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server started at port ${port}.`);
- })
+});
