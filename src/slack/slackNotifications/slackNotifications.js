@@ -48,4 +48,12 @@ export default class SlackNotifications {
     slackAction.addOptionalProps('unread_notifications');
     return { blocks: [slackSection, slackAction] };
   }
+
+  static loginToGithubNotification() {
+    const slackSection = new SlackSection('*Please link your github account below*');
+    const slackAction = new SlackActionsOrFields('actions', 'elements');
+    slackAction.addAction('Connect Github account', 'connect_github_account', 'primary');
+    slackAction.addOptionalProps('connect_github_account');
+    return { blocks: [slackSection, slackAction] };
+  }
 }
