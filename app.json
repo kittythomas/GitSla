@@ -1,0 +1,49 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "Gitsla Deployment Pipeline",
+  "env": {
+    "DATABASE_NAME": {
+      "required": true
+    },
+    "GITHUB_CLIENT_ID": {
+      "required": true
+    },
+    "GITHUB_CLIENT_SECRET": {
+      "required": true
+    },
+    "GITHUB_TOKEN": {
+      "required": true
+    },
+    "MONGO_DB_URL": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    },
+    "SLACK_AUTH_TOKEN": {
+      "required": true
+    },
+    "SLACK_BOT_TOKEN": {
+      "required": true
+    },
+    "SLACK_SIGNING_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "GitSla",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
